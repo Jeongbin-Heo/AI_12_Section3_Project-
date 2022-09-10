@@ -18,7 +18,7 @@
 |Feature|Description|
 |:---:|---|
 |country|와인이 생산된 국가|
-|description|와인 평가 |
+|description|와인 평가 내용|
 |desigination|와인 이름|
 |points|와인 평가 점수(1~100)|
 |price|와인의 가격|
@@ -36,11 +36,18 @@
 
 ## *II. 데이터 전처리*
 ### Feature Engineering
-와인의 
-### Feature Engineeringㅍㅕㅇ가
-### Feature Engineering
+* `description` `points` 특성만 사용
+* 새로운 특성 `sentiment`  : 평가 점수의 평균치를 계산, 평균보다 높으면 긍정(1), 평균보다 낮으면 부정(0)
 
-### 정규포현식, 내장함수, 불용어 제거, 표제어 추출
+<img width="447" alt="스크린샷 2022-09-10 오후 9 07 41" src="https://user-images.githubusercontent.com/97662174/189482542-e3cec702-99a0-4046-901c-e0146a958d72.png">
+
+|Feature|Description|
+|:---:|---|
+|description|와인 평가 내용|
+|points|와인 평가 점수(1~100)|
+|sentiment|해당 와인 평가의 긍정(1)/부정(0) 여부|
+
+### 정규표현식, 내장함수, 불용어 제거, 표제어 추출
 
 ### 학습 세트 / 테스트 세트 분리
 
