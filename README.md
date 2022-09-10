@@ -80,6 +80,16 @@
 
 ### 딥러닝 모델 설계
 
+```
+model = Sequential()
+model.add(Embedding(vocab_size, 300, input_length = maxlen, weights = [embedding_matrix], trainable = False))
+model.add(LSTM(128, return_sequences = True))
+model.add(LSTM(128))
+model.add(Dropout(0.1))
+model.add(Dense(32, activation = 'relu'))
+model.add(Dense(1, activation = 'sigmoid'))
+```
+
 <img width="624" alt="스크린샷 2022-09-10 오후 11 59 52" src="https://user-images.githubusercontent.com/97662174/189489052-0ae613ea-7a58-47f7-af7f-96ce1e5df88d.png">
 
 
