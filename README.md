@@ -1,12 +1,31 @@
 # 와인 리뷰 데이터 감정 분석
 * **개요** : 와인 리뷰 데이터를 이용하여 해당 리뷰 내용의 긍정/부정 여부를 판별하는 모델 설계
 * **진행 기간** : 2022. 05. 19 ~ 2022. 05. 25
-* **사용 스킬** : `Pandas` `Numpy` `Scikit-learn` `Tensorflow` `Keras`
-
 
 ### &nbsp;
 
-## *I. 프로젝트 개요*
+## :computer: 사용 Skill
+* **Google Colab**
+* **Python 3.7.13**
+  * 데이터 전처리 : pandas, numpy, nltk, re, sklearn, tensorflow
+  * 모델링 : tensorflow, keras, json
+* **DL Models**
+  * Embedding
+  * Word2vec
+  * LSTM
+  * Dropout
+
+### &nbsp;
+
+## :pushpin: Contents
+* :one: **프로젝트 개요**
+* :two: **데이터 전처리**
+* :three: **모델링**
+* :four: **모델 활용**
+
+### &nbsp;
+
+## :one: 프로젝트 개요
 ### 프로젝트 진행 배경
 * 와인을 구매할 때 고려해야 할 요소가 많기에 다른 주류에 비해 진입장벽이 높은 편에 속함
 * 따라서 와인을 잘 모르는 입문자들의 경우에는 평가 내용을 보고 구매하는 것이 일반적
@@ -40,7 +59,7 @@
 
 ### &nbsp;
 
-## *II. 데이터 전처리*
+## :two: 데이터 전처리
 ### Feature Engineering
 * `description` `points` 특성만 사용
 * 새로운 특성 `sentiment`  : 평가 점수의 평균치를 계산, 평균보다 높으면 긍정(1), 평균보다 낮으면 부정(0)
@@ -76,7 +95,7 @@
 
 ### &nbsp;
 
-## *III. 모델*
+## :three: 모델
 
 ### 딥러닝 설계
 
@@ -110,7 +129,7 @@
 
 ### &nbsp;
 
-## *IV. 모델 활용*
+## :four: 모델 활용
 * 리뷰 내용 텍스트를 전처리하는 과정을 거쳐 모델에 적용시켰을 때의 결과 = 0과 1 사이의 값
 * 0.5를 기준으로 기준값보다 높으면 긍정, 낮으면 부정으로 판단
 > * 예시문장 : Big, rich and off-dry, this is powered by intense spiciness and rounded texture. Lychees dominate the fruit profile, giving an opulent feel to the aftertaste. Drink now.
