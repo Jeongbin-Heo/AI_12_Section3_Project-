@@ -1,9 +1,9 @@
-# 와인 리뷰 데이터 감정 분석
+# :wine_glass: 와인 리뷰 데이터 감정 분석
 * **진행 기간** : 2022. 05. 19 ~ 2022. 05. 25
 
 ### &nbsp;
 
-## :computer: 사용 Skill
+## :books: 사용 Skill
 * **Google Colab**
 * **Python 3.7.13**
   * 데이터 전처리 : pandas, numpy, nltk, re, sklearn, tensorflow
