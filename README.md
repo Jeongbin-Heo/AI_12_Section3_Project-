@@ -21,6 +21,7 @@
 * :two: **데이터 전처리**
 * :three: **모델링**
 * :four: **모델 활용**
+* :five: ****
 
 ### &nbsp;
 
@@ -134,3 +135,9 @@
 > * 예시문장 : Big, rich and off-dry, this is powered by intense spiciness and rounded texture. Lychees dominate the fruit profile, giving an opulent feel to the aftertaste. Drink now.
 > * 결과값 : 0.8757
 > * 판별 : 긍정 -> 해당 리뷰가 남겨진 와인 구매를 고려할 수 있다!
+
+### &nbsp;
+
+## :five: 한계점
+* **캐글 데이터셋 사용** : 크롤링을 통해 직접 후기 텍스트를 수집하려고 하였으나 모델의 학습을 통한 성능 향상을 위해 캐글에 올라와있는 정제된 데이터셋을 사용한 점이 아쉬움으로 남음. 추후 직접 데이터를 수집하는 과정까지 시도해볼 필요가 있음  
+* **모델 기반 추가적인 서비스 구상** : 이번 프로젝트는 리뷰 텍스트의 긍정/부정 여부를 판별하는 모델을 만드는데 그쳤지만 이 모델을 활용하여 와인을 추천해주는 서비스를  프로젝트를 더 확장시킬 방안을 구상할 수 있음
